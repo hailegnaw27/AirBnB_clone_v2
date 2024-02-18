@@ -1,7 +1,18 @@
-from flask import flask
+#!/usr/bin/python3
+"""
+This module starts a Flask web application.
+"""
+
+from flask import Flask
+
 app = Flask(__name__)
+
+
 @app.route('/', strict_slashes=False)
 def hello():
+    """
+    This function handles the root route and returns 'Hello HBNB!'
+    """
     return "Hello HBNB!"
 
 
